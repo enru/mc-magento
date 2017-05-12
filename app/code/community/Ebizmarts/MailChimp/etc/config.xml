@@ -52,14 +52,6 @@
                     </mailchimp_save_before_customer>
                 </observers>
             </customer_save_before>
-            <sales_order_save_before>
-                <observers>
-                    <mailchimp_save_before_order>
-                        <class>mailchimp/observer</class>
-                        <method>orderSaveBefore</method>
-                    </mailchimp_save_before_order>
-                </observers>
-            </sales_order_save_before>
             <sales_order_place_after>
                 <observers>
                     <mailchimp_new_order>
@@ -195,6 +187,14 @@
                     </ebizmarts_mailchimp_quote_save>
                 </observers>
             </sales_quote_save_before>
+            <sales_order_save_before>
+                <observers>
+                    <mailchimp_save_before_order>
+                        <class>mailchimp/observer</class>
+                        <method>orderSaveBefore</method>
+                    </mailchimp_save_before_order>
+                </observers>
+            </sales_order_save_before>            
         </events>
         <translate>
             <modules>
